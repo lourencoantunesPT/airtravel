@@ -39,6 +39,18 @@ print(m.readlines())
 m.close()
 
 
+##### APPEND + TEXT
+
+h = open("wasteland.txt",'at')
+h.writelines(
+    ['linha1 \n', 'linha2 blabla \n', 'linha3 la la la ', 'linha 3 - é a 4 na verdade- continua blablb \n']
+)
+h.close()
+#faz o flush no close aparentemente
+
+
+
+
 
 
 
