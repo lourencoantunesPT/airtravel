@@ -16,12 +16,13 @@ def generate_sequence():
 
 def write_sequence(filename, num):
     """ escreve a serie para um ficheiro"""
-
     f = open(filename, mode = 'wt')
-    f.writelines(f"{r}\n"
-                 for r in islice(generate_sequence(), num + 1 ))
+    f.writelines(f"{r}\n" for r in islice(generate_sequence(), num + 1 ))
     f.close()
 
-    if __name__ == '__main__':
-        print("__name__ == __main__")
-        write_sequence(filename=sys.argv[1], num=int(sys,argv[2]))
+print( __name__ )
+if __name__ == '__main__':
+    pass
+print(sys.argv[1])
+print(sys.argv[2])
+write_sequence(filename=sys.argv[1], num=int(sys.argv[2]))
