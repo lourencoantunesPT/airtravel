@@ -85,7 +85,7 @@ class Flight:
 
 class SuperAircraft:
     def num_seats(self):
-        rows, row_seats = self._seating_plan()
+        rows, row_seats = self.seating_plan()
         return len(rows) * len(row_seats)
 
 class Aircraft_airbus319 (SuperAircraft):
